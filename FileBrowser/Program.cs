@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.IO;
 
 namespace FileBrowser
 {
@@ -15,13 +16,19 @@ namespace FileBrowser
                 Console.WriteLine("Geef een argument mee.");
             } else
             {
-                switch(args[0])
+                string c = Directory.GetCurrentDirectory();
+
+                switch (args[0])
                 {
                     case "-c":
                         Console.WriteLine("Current directory:");
+
+                        Console.WriteLine(c);
                         break;
                     case "-d":
                         Console.WriteLine("All subdirectories in current directory:");
+                        
+
                         break;
                     case "-f":
                         Console.WriteLine("All files in current directory:");
