@@ -48,7 +48,7 @@ namespace FileBrowser
                         Console.WriteLine("-h | Shows help");
                         break;
                     default:
-                        Console.WriteLine("Onbekend argument");
+                        Console.WriteLine("Unknown argument, give argument -h for help.");
                         break;
                 }
 
